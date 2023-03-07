@@ -1,0 +1,32 @@
+{
+  "todolist": [
+    {
+      "items": "daniel",
+      "id": 1
+    },
+    {
+      "items": "Nish",
+      "id": 2
+    },
+    {
+      "items": "Sukanya",
+      "id": 3
+    },
+    {
+      "items": "varun",
+      "id": 4
+    },
+    {
+      "items": "juice",
+      "id": 5
+    },
+    {
+      "items": "Eat",
+      "id": 6
+    },
+    {
+      "items": "dance",
+      "id": 7
+    }
+  ]
+}
