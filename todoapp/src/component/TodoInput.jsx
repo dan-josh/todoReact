@@ -2,7 +2,7 @@ import React from 'react'
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 
-function TodoInput({handleSubmit,setTododata,tododata}) {
+function TodoInput({handleSubmit,setTododata,tododata,handleEditSubmit,toggle}) {
 
   return (
     <div className="col-5 m-auto my-5">
@@ -14,14 +14,20 @@ function TodoInput({handleSubmit,setTododata,tododata}) {
         }}/>
 
       </Form.Group>
-      
-      <Button variant="primary" type="submit" >
+
+      {toggle ? <Button className='me-2' variant="primary" type="submit" >
         Submit
-      </Button>
-    </Form>
-    <Button onClick={()=>{
+      </Button> : <Button onClick={()=>{
+        handleEditSubmit()
+    }} >EditSubmit</Button>}
+      
+      
+      <Button onClick={()=>{
         setTododata("");
     }}>Clear</Button>
+    
+    </Form>
+    
 
 
     </div>

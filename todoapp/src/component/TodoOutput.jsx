@@ -1,11 +1,13 @@
 import React from 'react'
 
-const TodoOutput = ({name,id,handleDelete}) => {
+const TodoOutput = ({name,id,handleDelete,handleEdit,index}) => {
   return (
-    <div className='d-flex justify-content-around mb-3'>
-        <h6>{id}</h6>
+    <div key={id} className='d-flex justify-content-around mb-3'>
+        <h6>{index+1}</h6>
         <h6>{name}</h6>
-        <button className='btn btn-primary'>Edit</button>
+        <button className='btn btn-primary' onClick={()=>{
+            handleEdit(id);
+        }}>Edit</button>
         <button className='btn btn-danger' onClick={()=>{
             handleDelete(id);
         }}>Delete</button>
@@ -14,3 +16,5 @@ const TodoOutput = ({name,id,handleDelete}) => {
 }
 
 export default TodoOutput
+
+
