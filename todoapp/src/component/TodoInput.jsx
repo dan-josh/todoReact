@@ -5,7 +5,7 @@ import Form from 'react-bootstrap/Form';
 function TodoInput({handleSubmit,setTododata,tododata,handleEditSubmit,toggle}) {
 
   return (
-    <div className="col-5 m-auto my-5">
+    <div className="col-5 m-auto my-4">
         <Form className='text-center' onSubmit={handleSubmit}>
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>TODO LIST</Form.Label>
